@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+  </head>
+
+  <style>
+    .Navigation {
+      border: none;
+      padding: 10px 15px;
+      background-color: #5b7c99;
+      height: 60px;
+      border-radius: 10px;
+    }
+    .Body {
+      background-color: #5b7c99;
+    }
+    .Navigation-Ryan {
+      margin: 0;
+      font-family: monospace;
+      display: inline-block;
+      margin-right: 150px;
+      margin-left: 50px;
+      font-size: 35px;
+      color: #e0ffff;
+    }
+    .Navigation-bar {
+      border: none;
+      background-color: #5b7c99;
+      cursor: pointer;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      font-size: 27px;
+      margin-right: 75px;
+      color: #e0ffff;
+        text-decoration: none;
+    }
+
+    .Ryan {
+      border-radius: 100px;
+      width: 449px;
+      height: 777px;
+      margin-top: 30px;
+      margin-left: 200px;
+      border: solid, rgb(32, 80, 102);
+    }
+    .Home-content {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 5px;
+    }
+
+    .Home-text {
+      font-size: 30px;
+      width: 1000px;
+      margin-left: 100px;
+      margin-bottom: 400px;
+      font-family: monospace;
+      color: #e0ffff;
+    }
+
+    .linkedin-icon {
+      width: 64px;
+      height: 64px;
+      padding: 0;
+      margin-left: 1750px;
+      background: none;
+      border: none;
+      border-radius: 15px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .project-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-card h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #4a90e2;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-card a {
+      text-decoration: none;
+      background: #4a90e2;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    .project-card a:hover {
+      background: #357abd;
+    }
+  </style>
+  <body class="Body">
+    <div class="Navigation">
+      <h1 class="Navigation-Ryan">Ryan Chung</h1>
+
+      <a href="index.html" class="Navigation-bar">Home</a>
+      <a href="PhotoCollage.html" class="Navigation-bar">Photo Collage</a>
+      <a href="Experience&Skills.html" class="Navigation-bar">Experience & Skills</a>
+      <a href="Projects.html" class="Navigation-bar"> Projects</a>
+      <a href="Socials.html" class="Navigation-bar">Socials</a>
+
+      <a
+        class="Linkedin-container"
+        href="https://www.linkedin.com/in/ryan-chung-a26852261/"
+        target="blank_"
+        rel="noopener noreferrer"
+      >
+        <img src="Linkedin.png" alt="Linkedin" class="linkedin-icon" />
+      </a>
+    </div>
+
+    <section class="projects">
+      <div class="project-card">
+        <h2>Advanced Networking II - Case Study 2024</h2>
+        <p>
+          The project requires designing the network using the given topologies,
+          configuring routers and switches, testing to ensure connectivity and
+          redundancy across campuses, and providing screenshots as proof of
+          correct implementation. Specifically includes configuration of IP
+          addressing, VTP, Vlans, Static links, Etherchannels, Spanning tree,
+          FHRP, MPLS, DMVPN Phase 3, Routing protocols, and IP Services
+        </p>
+        <a href="Advanced Networking II Case Study_ Commands, Topology, Addressing Table.pdf">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h2>SNA Final Project</h2>
+        <p>
+          The project requires setting up an enterprise network with Active
+          Directory, DHCP, DNS, users, groups, policies, and file sharing across
+          multiple sites. Students must also implement Windows Server Update
+          Services (WSUS), verify the setup, and present their work with
+          disaster recovery plans, gaining practical experience in secure
+          network administration.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h2>Employee Dashboard - Excel</h2>
+        <p>
+          The Employee Data Dashboard is designed to enable users to analyze
+          employee salary trends across countries, cities, genders, and
+          ethnicities; compare job distribution by location, department, and
+          demographic groups; interpret workforce diversity and equity in pay
+          and representation; track hiring patterns over time to identify
+          seasonal or yearly trends; and develop skills in using dashboards for
+          data-driven decision-making in HR and business planning.
+        </p>
+      </div>
+
+    
+      </div>
+    </section>
+  </body>
+</html>
